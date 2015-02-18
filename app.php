@@ -1,4 +1,3 @@
-
 <?php
 
 namespace Smce;
@@ -7,7 +6,7 @@ use Smce\Core\EventManager;
 
 use Smce\Core\Smceframework;
 
-class app
+class App
 {
      /**
     *
@@ -15,15 +14,15 @@ class app
     *
     */
 
-    public function __construct()
+    public function __construct(){}
 
     /**
-    *@param name
+    *@param string
     *
-    *@return value
+    *@return string
     *
     */
-    public function __get(name)
+    public function __get($name){}
     
     
 

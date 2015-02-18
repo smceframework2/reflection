@@ -8,34 +8,34 @@ class HttpException extends \Exception
 
 
      /**
-     * @param httpCode,
-     * @param message
+     * @param int
+     * @param string
      *
      * @return header
      */
 
-    public function __construct(int httpCode,string msg)
+    public function __construct($httpCode,$msg){}
     
 
      /**
      *
      * @return message
      */
-    public function getMsg()
+    public function getMsg(){}
 
 
      /**
      *
      * @return httpCode
      */
-    public function getHttpCode()
+    public function getHttpCode(){}
     
 
     /**
      *
      * @return httpError
      */
-    public function htppError()
+    public function htppError(){}
 
 
     

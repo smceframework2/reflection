@@ -1,4 +1,3 @@
-
 <?php
 
 
@@ -6,11 +5,11 @@ namespace Smce;
 
 class Sm
 {
-	 /**
+	/**
     *
-    *@return app
+    * @return app
     *
     */
-    public static function app()
+    public static function app(){}
 
 }

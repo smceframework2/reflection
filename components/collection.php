@@ -1,4 +1,3 @@
-
 <?php
 
 namespace Smce\Components;
@@ -9,32 +8,32 @@ class Collection
     
 
      /**
-    *@param items
+    *@param array
     *
     *
     *@return void
     */
 
 
-    public function __construct(items = [])
+    public function __construct($items = []){}
 
     /**
-    *@param Closure callback
+    *@param Closure
     *
     *
     *@return this
     */
 
-    public function each(<\Closure> callback)
+    public function each($callback){}
 
     /**
-    *@param key
+    *@param string
     *
     *
     *@return static
     */
 
-    public function fetch(string key)
+    public function fetch($key){}
     
 
     /**
@@ -44,34 +43,29 @@ class Collection
     *@return static
     */
 
-    public function map(callback)
+    public function map($callback){}
 
 
      /**
-    *@param Closure callback
+    *@param Closure
     *
     *
     *@return static
     */
 
 
-    public function filter(callback)
+    public function filter($callback){}
 
    
     /**
-    *@param key
-    *@param dt
+    *@param string
+    *@param mixed
     *
     *@return static
     */
 
 
-    public function pull(key, dt = null)
-    {
-        
-        return array_pull(this->items, key, dt);
-
-    }
+    public function pull($key, $dt = null){}
 
 
     /**
@@ -79,19 +73,15 @@ class Collection
     *@return array_pop
     */
 
-    public function pop()
-    {
-        
-        return array_pop(this->items);
-    }
+    public function pop(){}
 
     /**
-    *@param items
+    *@param array
     *
     *@return static
     */
 
-    public function diff(array items)
+    public function diff($items){}
     
 
     /**
@@ -99,17 +89,17 @@ class Collection
     *@return items
     */
     
-    public function getAll()
+    public function getAll(){}
 
 
     /**
-    *@param Closure callback
-    *@param dt
+    *@param Closure
+    *@param mixed
     *
     *@return fist
     */
 
-    public function first(<\Closure> callback = null, dt = null)
+    public function first($callback = null, $dt = null){}
 
      /**
     *
@@ -117,17 +107,17 @@ class Collection
     */
 
 
-    public function flatten()
+    public function flatten(){}
 
 
      /**
-    *@param key
-    *@param dt
+    *@param string
+    *@param mixed
     *
     *@return value
     */
 
-    public function get(key, dt = null)
+    public function get($key, $dt = null){}
 
 
      /**
@@ -135,26 +125,23 @@ class Collection
     *@return static
     */
 
-    public function flip()
-    {
-        
-        return new $static(array_flip(this->items));
-    }
+    public function flip(){}
+    
 
 
      /**
-    *@param key
+    *@param string
     *
     *@return has
     */
+    public function has($key){}
 
-    public function has(key)
 
      /**
     *
-    *@return item empty
+    *@return bool
     */
-    public function isEmpty()
+    public function isEmpty(){}
 
 
 
@@ -162,71 +149,55 @@ class Collection
     *
     *@return static
     */
-
-    public function keys()
+    public function keys(){}
 
 
      /**
-    *@param value
-    *@param key
+    *@param string
+    *@param string
     *
     *@return array
     */
-
-    public function lists(string value, string key = null)
+    public function lists($listsvalue, $listskey = null){}
 
 
     /**
-    *@param key
-    *@param dt
+    *@param array
     *
     *@return static
     */
-    public function merge(array items)
+    public function merge($items){}
     
 
      /**
     *
     *@return last value
     */
-
-    public function last()
+    public function last(){}
 
 
      /**
-    *@param key
+    *@param string
     *
-    *@return array_key_exists
+    *@return bool
     */
-    
-    public function offsetExists(key) -> bool
-    {
-        
-        return array_key_exists(key, this->items);
-    }
+    public function offsetExists($key){}
 
      /**
-    *@param value
+    *@param mixed
     *
     *@return void
     */
-
-    public function prepend(value)
-    {
-
-        array_unshift(this->items, value);
-
-    }
+    public function prepend($value){}
 
 
     /**
-    *@param callback
-    *@param initial
-    *@return array
+    *@param  callable $callback
+    *@param  mixed $initial
+    *@return mixed
     *
     */
-
-    public function reduce(callback, initial = null)
+    public function reduce($callback, $initial = null){}
     
 
     /**
@@ -234,27 +205,25 @@ class Collection
     *@return static
     *
     */
-
-    public function reverse()
+    public function reverse(){}
 
 
     /**
-    *@param value
-    *@param strict
+    *@param mixed
+    *@param bool $strict
     *
-    *@return value
-    *
-    */
-
-    public function search(value, bool strict = false)
-
-
-     /**
-    *
-    *@return shift
+    *@return mixed
     *
     */
-    public function shift()
+    public function search($value, $strict = false){}
+
+
+    /**
+    *
+    *@return mixed|null
+    *
+    */
+    public function shift(){}
 
 
     /**
@@ -263,27 +232,26 @@ class Collection
     *@return this
     *
     */
-    public function sort(<\Closure> callback)
+    public function sort($callback){}
 
 
     /**
-    *@param offset
-    *@param lenght
-    *@param replacement
-    *
-    *@return static
+    * @param int $offset
+    * @param int $length
+    * @param mixed $replacement
+    * @return static
     *
     */
-    public function splice(int offset, int length = 0, replacement = [])
+    public function splice($offset, $length = 0, $replacement = []){}
 
  
     /**
-    *@param Closure callback
+    *@param Closure
     *
     *@return this
     *
     */
-    public function transform(<\Closure> callback)
+    public function transform($callback){}
 
 
     /**
@@ -291,7 +259,7 @@ class Collection
     *@return static
     *
     */
-    public function values()
+    public function values(){}
 
 
      /**
@@ -299,7 +267,7 @@ class Collection
     *@return static
     *
     */
-    public function unique()
+    public function unique(){}
 
 
     /**
@@ -307,35 +275,34 @@ class Collection
     *@return this
     *
     */
-    public function shuffle()
+    public function shuffle(){}
 
 
      /**
     *
-    *@return count
+    *@return int
     *
     */
 
-    public function count()
+    public function count(){}
 
     /**
-    *@param value
+    *@param mixed $value
     *
     *@return void
     *
     */
 
-    public function push(value)
+    public function push($value){}
 
 
     /**
-    *@param key
-    *@param value
-    *
-    *@return void
+    * @param mixed $key
+    * @param mixed $value
+    * @return void
     *
     */
-    public function offsetSet(key, value)
+    public function offsetSet($key, $value){}
 
     
 }

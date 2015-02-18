@@ -1,4 +1,3 @@
-
 <?php
 
 
@@ -8,47 +7,47 @@ class Output
 {
 
     /**
-    *@param mimeType
+    *@param string
     *
     *
     *@return this
     */
 
     
-    public function setContentType(mimeType = "")
+    public function setContentType($mimeType = ""){}
 
 
    /**
-    *@param fileName
+    *@param string
     *
     *
     *@return this
     */
 
-    public function setFileName(fileName)
+    public function setFileName($fileName){}
 
     
     /**
-    *@param data
+    *@param mixed
     *
     *
     *@return echo
     */
-    public function put(data)
+    public function put($data){}
     
      /**
-    *@param file
+    *@param string
     *
     *
     *@return void
     */
-    public function putFile(file)
+    public function putFile($file){}
     
     /**
     *
     *
     *@return header
     */
-    public function getHeader()
+    public function getHeader(){}
 
 }

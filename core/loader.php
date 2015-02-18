@@ -1,32 +1,30 @@
-
 <?php
 
 
 namespace Smce\Core;
 
 class Loader
-
 {
 
     /**
-    *@param dir
+    *@param array
     *
     *@return void
     */  
-    public function setDir(array dir)
+    public function setDir($dir){}
     
     /**
     *
     *@return void
     */
-    public function register()
+    public function register(){}
 
     /**
-    *@param className
+    *@param string
     *
     *@return require
     */  
-    public function autoLoad(string className)
+    public function autoLoad($className){}
     
     
     

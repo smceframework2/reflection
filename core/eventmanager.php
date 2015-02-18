@@ -1,4 +1,3 @@
-
 <?php
 
 namespace Smce\Core;
@@ -8,81 +7,81 @@ class EventManager
 {
 
     /**
-    *@param key
-    *@param params
+    *@param string
+    *@param array
     *
     *@return function
     */
 
-    public static function __callStatic(string key,array params)
+    public static function __callStatic($key,$params){}
 
 
 
     /**
-    *@param key
-    *@param params
+    *@param string
+    *@param array
     *
     *@return function
     */
 
-    public  function __call(string key,array params)
+    public  function __call($key,$params){}
 
 
     /**
-    *@param key
-    *@param Closure $class
+    *@param string
+    *@param Closure
     *
     *@return void
     */  
-    public function push(key,<\Closure> $class)
+    public function push($key,$class){}
 
 
     /**
-    *@param key
+    *@param string
     *
-    *@return function or false
+    *@return function|false
     */ 
-    public static function pull(string key)
+    public static function pull($key){}
 
 
 
     /**
-    *@param key
-    *@param Closure $class
+    *@param string
+    *@param Closure
     *
     *@return void
     */
-    public function bind(string key,<\Closure> $class)
+    public function bind($key,$class){}
 
 
     /**
-    *@param key
+    *@param string
     *
-    *@return boll
+    *@return bool
     */
-    public static function remove(string key="")
+    public static function remove($key=""){}
 
 
     /**
-    *@param key
+    *@param string
     *
-    *@return boll
+    *@return bool
     */
-    public static function has(string key="")
+    public static function has($key=""){}
 
 
     /**
     *
     *@return void
     */
-    public static function reset()
+    public static function reset(){}
 
 
     /**
     *
     *@return array
     */
-    public static function  getKeys()
+    public static function  getKeys(){}
 
 
 
@@ -90,14 +89,14 @@ class EventManager
     *
     *@return array
     */
-    public static function  getAll()
+    public static function  getAll(){}
 
 
      /**
     *
     *@return int
     */
-    public static function getCount()
+    public static function getCount(){}
 
 
 

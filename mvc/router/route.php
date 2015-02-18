@@ -30,7 +30,7 @@ class Route {
 	protected static $_uniqueId;
 
 	/**
-	 * \Phalcon\Mvc\Router\Route constructor
+	 * \Smce\Mvc\Router\Route constructor
 	 *
 	 * @param string pattern
 	 * @param array paths
@@ -57,7 +57,7 @@ class Route {
 	 *</code>
 	 *
 	 * @param string|array httpMethods
-	 * @return \Phalcon\Mvc\Router\Route
+	 * @return \Smce\Mvc\Router\Route
 	 */
 	public function via($httpMethods){ }
 
@@ -98,7 +98,7 @@ class Route {
 	 *</code>
 	 *
 	 * @param string name
-	 * @return \Phalcon\Mvc\Router\Route
+	 * @return \Smce\Mvc\Router\Route
 	 */
 	public function setName($name){ }
 
@@ -109,7 +109,7 @@ class Route {
 	 * If the callback returns false the route is treaded as not matched
 	 *
 	 * @param callback callback
-	 * @return \Phalcon\Mvc\Router\Route
+	 * @return \Smce\Mvc\Router\Route
 	 */
 	public function beforeMatch($callback){ }
 
@@ -171,7 +171,7 @@ class Route {
 	 *</code>
 	 *
 	 * @param string|array httpMethods
-	 * @return \Phalcon\Mvc\Router\Route
+	 * @return \Smce\Mvc\Router\Route
 	 */
 	public function setHttpMethods($httpMethods){ }
 
@@ -192,7 +192,7 @@ class Route {
 	 *</code>
 	 *
 	 * @param string|array httpMethods
-	 * @return \Phalcon\Mvc\Router\Route
+	 * @return \Smce\Mvc\Router\Route
 	 */
 	public function setHostname($hostname){ }
 
@@ -208,8 +208,8 @@ class Route {
 	/**
 	 * Sets the group associated with the route
 	 *
-	 * @param \Phalcon\Mvc\Router\Group group
-	 * @return \Phalcon\Mvc\RouteInterface
+	 * @param \Smce\Mvc\Router\Group group
+	 * @return \Smce\Mvc\RouteInterface
 	 */
 	public function setGroup($group){ }
 
@@ -217,7 +217,7 @@ class Route {
 	/**
 	 * Returns the group associated with the route
 	 *
-	 * @return \Phalcon\Mvc\Router\Group|null
+	 * @return \Smce\Mvc\Router\Group|null
 	 */
 	public function getGroup(){ }
 
@@ -227,7 +227,7 @@ class Route {
 	 *
 	 * @param string name
 	 * @param callable converter
-	 * @return \Phalcon\Mvc\Router\Route
+	 * @return \Smce\Mvc\Router\Route
 	 */
 	public function convert($name, $converter){ }
 

@@ -11,26 +11,25 @@ class Acl
 {
    
     /**
-    * @param $accessRules
-    * @param $view
+    * @param array
     *
     * @return void
     */
 
-   public function setRules(array rules)
+   public function setRules($rules){}
 
    /**
     *
     * @return rules
     */
-   public function getRules()
+   public function getRules(){}
 
 
    /**
-    * @return true or HttpException
+    * @return true|HttpException
     */
     
-    public function run()
+    public function run(){}
 
 
     

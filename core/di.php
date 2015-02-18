@@ -1,4 +1,3 @@
-
 <?php
 
 namespace Smce\Core;
@@ -17,58 +16,58 @@ class Di
     *@return void
     */
 
-    public function __construct(adapter=NULL)
+    public function __construct($adapter=NULL){}
 
 
     /**
-    *@param key
-    *@param Closure class
+    *@param string
+    *@param Closure
     *
-    *@return void or DiCache
+    *@return void|DiCache
     */
 
-    public function bind(string key,<\Closure> $class)
+    public function bind($key,$class){}
     
 
      /**
-    *@param key
+    *@param string
     *
-    *@return value or false
+    *@return value|false
     */
-    public static function resolve(string key)
+    public static function resolve($key){}
 
 
     /**
-    *@param key
-    *@param Closure class
+    *@param string
+    *@param Closure
     *
     *@return new Di\Singleton
     */
-    public function singleton(string key,<\Closure> $class)
+    public function singleton($key,$class){}
     
 
 
     /**
-    *@param key
+    *@param string
     *
     *@return bool
     */
-    public static function remove(string key="")
+    public static function remove($key=""){}
 
 
 
     /**
-    *@param key
+    *@param string
     *
     *@return bool
     */
-    public static function has(string key="")
+    public static function has($key=""){}
 
     /**
     *
     *@return void
     */
-    public static function reset()
+    public static function reset(){}
 
 
 
@@ -77,13 +76,13 @@ class Di
     *
     *@return array
     */
-    public static function  getKeys()
+    public static function  getKeys(){}
 
     /**
     *
     *@return array
     */
-    public static function  getAll()
+    public static function  getAll(){}
 
 
 
@@ -91,7 +90,7 @@ class Di
     *
     *@return int
     */
-    public static function getCount()
+    public static function getCount(){}
 
 
 }

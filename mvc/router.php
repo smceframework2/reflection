@@ -47,27 +47,13 @@ class Router {
 	protected $_notFoundPaths;
 
 	/**
-	 * \Phalcon\Mvc\Router constructor
+	 * \Smce\Mvc\Router constructor
 	 *
 	 * @param boolean defaultRoutes
 	 */
 	public function __construct($defaultRoutes=null){ }
 
 
-	/**
-	 * Sets the dependency injector
-	 *
-	 * @param \Phalcon\DiInterface dependencyInjector
-	 */
-	public function setDI(\Phalcon\DiInterface $dependencyInjector){ }
-
-
-	/**
-	 * Returns the internal dependency injector
-	 *
-	 * @return \Phalcon\DiInterface
-	 */
-	public function getDI(){ }
 
 
 	/**
@@ -86,7 +72,7 @@ class Router {
 	 *</code>
 	 *
 	 * @param string uriSource
-	 * @return \Phalcon\Mvc\Router
+	 * @return \Smce\Mvc\Router
 	 */
 	public function setUriSource($uriSource){ }
 
@@ -95,7 +81,7 @@ class Router {
 	 * Set whether router must remove the extra slashes in the handled routes
 	 *
 	 * @param boolean remove
-	 * @return \Phalcon\Mvc\Router
+	 * @return \Smce\Mvc\Router
 	 */
 	public function removeExtraSlashes($remove){ }
 
@@ -104,7 +90,7 @@ class Router {
 	 * Sets the name of the default namespace
 	 *
 	 * @param string namespaceName
-	 * @return \Phalcon\Mvc\Router
+	 * @return \Smce\Mvc\Router
 	 */
 	public function setDefaultNamespace($namespaceName){ }
 
@@ -113,7 +99,7 @@ class Router {
 	 * Sets the name of the default module
 	 *
 	 * @param string moduleName
-	 * @return \Phalcon\Mvc\Router
+	 * @return \Smce\Mvc\Router
 	 */
 	public function setDefaultModule($moduleName){ }
 
@@ -122,7 +108,7 @@ class Router {
 	 * Sets the default controller name
 	 *
 	 * @param string controllerName
-	 * @return \Phalcon\Mvc\Router
+	 * @return \Smce\Mvc\Router
 	 */
 	public function setDefaultController($controllerName){ }
 
@@ -131,7 +117,7 @@ class Router {
 	 * Sets the default action name
 	 *
 	 * @param string actionName
-	 * @return \Phalcon\Mvc\Router
+	 * @return \Smce\Mvc\Router
 	 */
 	public function setDefaultAction($actionName){ }
 
@@ -148,7 +134,7 @@ class Router {
 	 *</code>
 	 *
 	 * @param array defaults
-	 * @return \Phalcon\Mvc\Router
+	 * @return \Smce\Mvc\Router
 	 */
 	public function setDefaults($defaults){ }
 
@@ -179,7 +165,7 @@ class Router {
 	 * @param string pattern
 	 * @param string/array paths
 	 * @param string httpMethods
-	 * @return \Phalcon\Mvc\Router\Route
+	 * @return \Smce\Mvc\Router\Route
 	 */
 	public function add($pattern, $paths=null, $httpMethods=null){ }
 
@@ -189,7 +175,7 @@ class Router {
 	 *
 	 * @param string pattern
 	 * @param string/array paths
-	 * @return \Phalcon\Mvc\Router\Route
+	 * @return \Smce\Mvc\Router\Route
 	 */
 	public function addGet($pattern, $paths=null){ }
 
@@ -199,7 +185,7 @@ class Router {
 	 *
 	 * @param string pattern
 	 * @param string/array paths
-	 * @return \Phalcon\Mvc\Router\Route
+	 * @return \Smce\Mvc\Router\Route
 	 */
 	public function addPost($pattern, $paths=null){ }
 
@@ -209,7 +195,7 @@ class Router {
 	 *
 	 * @param string pattern
 	 * @param string/array paths
-	 * @return \Phalcon\Mvc\Router\Route
+	 * @return \Smce\Mvc\Router\Route
 	 */
 	public function addPut($pattern, $paths=null){ }
 
@@ -219,7 +205,7 @@ class Router {
 	 *
 	 * @param string pattern
 	 * @param string/array paths
-	 * @return \Phalcon\Mvc\Router\Route
+	 * @return \Smce\Mvc\Router\Route
 	 */
 	public function addPatch($pattern, $paths=null){ }
 
@@ -229,7 +215,7 @@ class Router {
 	 *
 	 * @param string pattern
 	 * @param string/array paths
-	 * @return \Phalcon\Mvc\Router\Route
+	 * @return \Smce\Mvc\Router\Route
 	 */
 	public function addDelete($pattern, $paths=null){ }
 
@@ -239,7 +225,7 @@ class Router {
 	 *
 	 * @param string pattern
 	 * @param string/array paths
-	 * @return \Phalcon\Mvc\Router\Route
+	 * @return \Smce\Mvc\Router\Route
 	 */
 	public function addOptions($pattern, $paths=null){ }
 
@@ -249,7 +235,7 @@ class Router {
 	 *
 	 * @param string pattern
 	 * @param string/array paths
-	 * @return \Phalcon\Mvc\Router\Route
+	 * @return \Smce\Mvc\Router\Route
 	 */
 	public function addHead($pattern, $paths=null){ }
 
@@ -257,17 +243,17 @@ class Router {
 	/**
 	 * Mounts a group of routes in the router
 	 *
-	 * @param \Phalcon\Mvc\Router\Group route
-	 * @return \Phalcon\Mvc\Router
+	 * @param \Smce\Mvc\Router\Group route
+	 * @return \Smce\Mvc\Router
 	 */
-	public function mount(\Phalcon\Mvc\Router\Group $group){ }
+	public function mount(\Smce\Mvc\Router\Group $group){ }
 
 
 	/**
 	 * Set a group of paths to be returned when none of the defined routes are matched
 	 *
 	 * @param array paths
-	 * @return \Phalcon\Mvc\Router
+	 * @return \Smce\Mvc\Router
 	 */
 	public function notFound($paths){ }
 
@@ -321,7 +307,7 @@ class Router {
 	/**
 	 * Returns the route that matchs the handled URI
 	 *
-	 * @return \Phalcon\Mvc\Router\Route
+	 * @return \Smce\Mvc\Router\Route
 	 */
 	public function getMatchedRoute(){ }
 
@@ -345,7 +331,7 @@ class Router {
 	/**
 	 * Returns all the routes defined in the router
 	 *
-	 * @return \Phalcon\Mvc\Router\Route[]
+	 * @return \Smce\Mvc\Router\Route[]
 	 */
 	public function getRoutes(){ }
 
@@ -354,7 +340,7 @@ class Router {
 	 * Returns a route object by its id
 	 *
 	 * @param int id
-	 * @return \Phalcon\Mvc\Router\Route
+	 * @return \Smce\Mvc\Router\Route
 	 */
 	public function getRouteById($id){ }
 
@@ -363,7 +349,7 @@ class Router {
 	 * Returns a route object by its name
 	 *
 	 * @param string name
-	 * @return \Phalcon\Mvc\Router\Route | boolean
+	 * @return \Smce\Mvc\Router\Route | boolean
 	 */
 	public function getRouteByName($name){ }
 

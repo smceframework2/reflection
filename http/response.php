@@ -11,9 +11,11 @@ class Response extends HttpException
 {
 	
 	/**
-     *
+     * @param int
+     * @param string
+     * 
      * @return header
      */
-    public function __construct(int httpCode,string msg)
+    public function __construct($httpCode,$msg){}
 
 }

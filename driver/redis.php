@@ -5,77 +5,63 @@ namespace Smce\Driver;
 
 class Redis
 {
-    /**
-     * @var array redis config
-     */
-    protected config = [];
- 
-    /**
-     * @var redis instance
-     */
-    protected redis;
    
     
     /*
      * @return redis connect
      */
-    public function getRedis()
+    public function getRedis(){}
 
     
     /*
      * @return void
      */
-    public function setConfig(config)
+    public function setConfig($config){}
 
 
      /*
-     * @return config
+     * @return array
      */
 
-    public function getConfig(config)
+    public function getConfig($config){}
     
     /**
      * @return void
      */
-    public function connect()
+    public function connect(){}
     
     /**
-     * @param key
+     * @param string
      *
-     * @return get
+     * @return string
      */
-    public function get(string key)
+    public function get($key){}
     
     /**
-     * @param key
-     * @param value
-     * @param duration
+     * @param string
+     * @param string
+     * @param int
      *
      * @return set
      */
-    public function set(string key,string value,int duration)
+    public function set($key,$value,$duration){}
     
     /**
-     * @param key
-     * @param value
-     * @param duration
+     * @param string
+     * @param string
      *
      * @return lpush
      */
-    public function lpush(string key,string value)
-    {
-        
-        return this->redis->lpush(key, value);
-    }
+    public function lpush($key,$value){}
     
     /**
-     * @param key
-     * @param x
-     * @param y
+     * @param string
+     * @param long
+     * @param long
      *
      * @return lrange
      */
-    public function lrange(string key, x, y)
+    public function lrange($key, $x, $y){}
     
 
 }

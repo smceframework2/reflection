@@ -5,97 +5,88 @@ namespace Smce\Driver;
 
 class Memcache
 {
-    /**
-     * @var array memcache config
-     */
-    protected config = [];
-
-    /**
-     * @var memcache instance
-     */
-    protected memcache;
   
     
     /*
      * @return memcache connect
      */
-    public function getMemcache()
+    public function getMemcache(){}
     
     /*
-     * @param config
+     * @param array
      * @return void
      */
-    public function setConfig(config)
+    public function setConfig($config){}
 
 
     /*
-     * @return config
+     * @return array
      */
 
-    public function getConfig()
+    public function getConfig(){}
     
 
     /**
      * @return void
      */
-    public function connect()
+    public function connect(){}
     
     /**
-     * @param key
+     * @param string
      *
-     * @return value
+     * @return string
      */
-    public function get(string key)
+    public function get($key){}
     
     /**
-     * @param key
-     * @param value
-     * @param bolen
-     * @param duration
+     * @param string
+     * @param string
+     * @param bool
+     * @param int
      *
      * @return set
      */
-    public function set(string key, string value,bool bolen,int duration)
+    public function set($key, $value, $bolen,$duration){}
     
     /**
-     * @param key
-     * @param value
-     * @param bolen
-     * @param duration
+     * @param string
+     * @param string
+     * @param bool
+     * @param int
      *
      * @return add
      */
-    public function add(string key,string value,bool bolen,int duration = 10)
+    public function add($key, $value, $bolen,$duration=10){}
     
     /**
-     * @param host
-     * @param port
+     * @param string
+     * @param string
      *
      * @return addServer
      */
-    public function addServer(host, port)
+    public function addServer($host, $port){}
     /**
      * 
      *
      * @return  close
      *
      */
-    public function close()
+    public function close(){}
     
     /**
-     * @param key
-     * @param item
+     * @param string
+     * @param int
      *
      * @return decrement
      */
-    public function decrement(string key,int item)
+    public function decrement($key,$item){}
 
     /**
-     * @param key
+     * @param string
      *
      * @return delete
      */
-    public function delete(string key)
+    public function delete($key){}
 
     
     /**
@@ -103,7 +94,7 @@ class Memcache
      *
      * @return flush
      */
-    public function flush()
+    public function flush(){}
 
     
     /**
@@ -111,16 +102,17 @@ class Memcache
      *
      * @return getExtendedStats
      */
-    public function getExtendedStats()
+    public function getExtendedStats(){}
 
 
     /**
-     * @param host
-     * @param port
+     * @param string
+     * @param string
      *
      * @return getServerStatus
      */
-    public function getServerStatus(string host, port)
+    public function getServerStatus($host, $port){}
+
 
     
     /**
@@ -128,51 +120,51 @@ class Memcache
      *
      * @return getStats
      */
-    public function getStats()
+    public function getStats(){}
     
     /**
      * 
      *
      * @return getVersion
      */
-    public function getVersion()
+    public function getVersion(){}
     
     /**
-     * @param key
-     * @param item
+     * @param string
+     * @param int
      *
      * @return increment
      */
-    public function increment(string key,int item)
+    public function increment($key,$item){}
 
     
     /**
-     * @param host
-     * @param port
+     * @param string
+     * @param string
      *
      * @return pconnect
      */
-    public function pconnect(string host, port)
+    public function pconnect($host, $port){}
 
     
     /**
-     * @param key
-     * @param value
-     * @param bolen
-     * @param duration
+     * @param string
+     * @param string
+     * @param bool
+     * @param int
      *
      * @return replace
      */
-    public function replace(string key,string value,bool bol,int duration)
+    public function replace($key,$value,$bol,$duration){}
 
     
     /**
      * @param int
-     * @param fload
+     * @param float
      *
      * @return setCompressThreshold
      */
-    public function setCompressThreshold(int i,float d)
+    public function setCompressThreshold($i,$d){}
 
 
 }

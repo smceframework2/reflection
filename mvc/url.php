@@ -7,31 +7,27 @@ namespace Smce\Mvc;
 class Url
 {
 	/**
-     * @param url
+     * @param string
      *
-     * @return voiid
+     * @return void
      */
 
-	public function setBaseUrl(string url)
+	public function setBaseUrl($url){}
 
 
 	/**
      *
      * @return url
      */
-	public function getBaseUrl()
-	{
-
-		return this->baseUrl;
-
-	}
+	public function getBaseUrl(){}
+	
 
 	/**
 	 * params
      *
      * @return url
      */
-	public function get(string paramerter)
+	public function get($paramerter){}
 
 
 

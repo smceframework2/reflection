@@ -1,4 +1,3 @@
-
 <?php
 
 namespace Smce\Components;
@@ -9,70 +8,70 @@ class Session
 
 
     /**
-    *@param security
+    *@param string
     *
     *
     *@return void
     */
-	public function setSecurity(security)
+	public function setSecurity($security){}
 
 
      /**
     *
     *@return void
     */
-    public function register()
+    public function register(){}
 
 
 	/**
-     * @param $key
-     * @param $value
+     * @param string
+     * @param mixed
      *
      * @return bool
      */
-    public function set(key, value)
+    public function set($key, $value){}
     
     /**
-     * @param key
+     * @param string
      *
-     * @return session or false
+     * @return mixed|false
      */
-    public function get(key)
+    public function get($key){}
     
     
     /**
      *
      * @return void
      */
-    public function reset()
+    public function reset(){}
 
 
     /**
      *
      * @return bool
      */
-    public function remove(key)
+    public function remove($key){}
 
     
     /**
      * @param _identity
-     * @param duration
+     * @param int
      *
-     * return param
+     * @return param
      */
-    public function login(_identity, duration)
+    public function login($_identity, $duration){}
 
 
-    /**
-     *
-     * return this->get()
-     */
-    public function getLoginStatus()
- 
     /**
      *
      * return bool
      */
-    public function isSessionStart()
+    public function getLoginStatus(){}
+ 
+    /**
+     *
+     * @return bool
+     */
+    public function isSessionStart(){}
 
 }

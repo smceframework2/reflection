@@ -1,4 +1,3 @@
-
 <?php
 
 
@@ -12,20 +11,20 @@ use Smce\Core\Di\Singleton;
 class SmceFramework
 {
     /**
-    * @var controller
+    * @var string
     */
-    public static controller;
+    public static $controller;
 
     /**
-    * @var action
+    * @var string
     */
-    public static action;
+    public static $action;
 
     /**
     *
     *@return void
     */ 
-    public function make()
+    public function make(){}
 
    
 
