@@ -64,4 +64,13 @@ class Redis
     public function lrange($key, $x, $y){}
     
 
+     /**
+     * @param string
+     * @param string
+     *
+     * @return hdel
+     */
+    public function hdel(string key,string key2){}
+
+
 }
