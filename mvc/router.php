@@ -57,7 +57,7 @@ class Router {
 
 
 	/**
-	 * Get rewrite info. This info is read from $_GET['_url']. This returns '/' if the rewrite information cannot be read
+	 * Get rewrite info. This info is read from $_GET['route']. This returns '/' if the rewrite information cannot be read
 	 *
 	 * @return string
 	 */
