@@ -16,7 +16,7 @@ class Acl
     * @return void
     */
 
-   public function setRules($rules){}
+   public function setRule($rule){}
 
    /**
     *
