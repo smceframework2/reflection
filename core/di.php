@@ -26,7 +26,7 @@ class Di
     *@return void|DiCache
     */
 
-    public function bind($key,$class){}
+    public  static function bind($key,$class){}
     
 
      /**
@@ -43,7 +43,7 @@ class Di
     *
     *@return new Di\Singleton
     */
-    public function singleton($key,$class){}
+    public static function singleton($key,$class){}
     
 
 

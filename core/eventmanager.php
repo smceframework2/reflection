@@ -33,7 +33,7 @@ class EventManager
     *
     *@return void
     */  
-    public function push($key,$class){}
+    public static function push($key,$class){}
 
 
     /**
@@ -51,7 +51,7 @@ class EventManager
     *
     *@return void
     */
-    public function bind($key,$class){}
+    public static function bind($key,$class){}
 
 
     /**
