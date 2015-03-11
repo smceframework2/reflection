@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Smce\Driver;
 
 class Redis
@@ -70,7 +69,7 @@ class Redis
      *
      * @return hdel
      */
-    public function hdel(string key,string key2){}
+    public function hdel($key,$key2){}
 
 
 }
