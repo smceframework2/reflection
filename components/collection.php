@@ -47,17 +47,6 @@ class Collection
 
     public function filter($callback){}
 
-   
-    /**
-    *@param string
-    *@param mixed
-    *
-    *@return static
-    */
-
-
-    public function pull($key, $dt = null){}
-
 
     /**
     *
@@ -126,14 +115,6 @@ class Collection
     */
     public function keys(){}
 
-
-     /**
-    *@param string
-    *@param string
-    *
-    *@return array
-    */
-    public function lists($listsvalue, $listskey = null){}
 
 
     /**
