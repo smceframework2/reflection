@@ -26,15 +26,6 @@ class Collection
 
     public function each($callback){}
 
-    /**
-    *@param string
-    *
-    *
-    *@return static
-    */
-
-    public function fetch($key){}
-    
 
     /**
     *@param Closure callback
@@ -92,22 +83,6 @@ class Collection
     public function getAll(){}
 
 
-    /**
-    *@param Closure
-    *@param mixed
-    *
-    *@return fist
-    */
-
-    public function first($callback = null, $dt = null){}
-
-     /**
-    *
-    *@return static
-    */
-
-
-    public function flatten(){}
 
 
      /**
